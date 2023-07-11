@@ -7,8 +7,12 @@ using System.Threading.Tasks;
 
 namespace AreaOfFigures.Infrastructure.Creators
 {
+    /// <summary>Класс содержит методы для создания объекта Circle</summary>
     public class CircleCreator
     {
+        /// <summary>Данный метод создает объект Circle</summary>
+        /// <param name="radius">Радиус круга</param>
+        /// <returns>Возвращаемый тип Circle. Если в качестве параметров передано значение меньше или равное 0 возвращается null</returns>
         public virtual Circle Create(double radius)
         {
             if (radius <= 0) return null;

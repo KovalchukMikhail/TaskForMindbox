@@ -7,8 +7,14 @@ using System.Threading.Tasks;
 
 namespace AreaOfFigures.Infrastructure.Creators
 {
+    /// <summary>Класс содержит методы для создания объекта Triangle</summary>
     public class TriangleCreator
     {
+        /// <summary>Данный метод создает объект Triangle</summary>
+        /// <param name="sizeOfSideA">Размер стороны A треугольника</param>
+        /// <param name="sizeOfSideB">Размер стороны B треугольника</param>
+        /// <param name="sizeOfSideC">Размер стороны C треугольника</param>
+        /// <returns>Возвращаемый тип Triangle. Если одна из сторон меньше или равна 0 или больше или равна сумме двух других сторон возвращается null</returns>
         public virtual Triangle Create(double sizeOfSideA, double sizeOfSideB, double sizeOfSideC)
         {
             if (sizeOfSideA <= 0
